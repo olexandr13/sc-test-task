@@ -4,7 +4,7 @@
     // "firefox:headless"
   ],
   "src": [
-    "src/tests/all-in-one-test.ts"
+    "src/tests/"
   ],
   "reporter": [
     {
@@ -20,7 +20,7 @@
   "selectorTimeout": 6000,
   "speed": 1,
   // "disablePageCaching": true,
-  "developmentMode": false,
+  "developmentMode": true,
   "qrCode": false,
   "colors": true
 }

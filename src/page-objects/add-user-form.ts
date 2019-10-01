@@ -13,7 +13,7 @@ class AddUserForm {
     this.startDateInput = Selector('input[ng-model="selectedEmployee.startDate"]');
     this.emailInput = Selector('input[ng-model="selectedEmployee.email"]');
     this.submitBtn = Selector('button[type="submit"]:nth-child(2)');
-    this.cancelBtn = Selector('button.bCancel');
+    this.cancelBtn = Selector('a.bCancel');
   }
 
   async fillFormWithData(firstName: string, lastName: string, startDate: string, email: string) {

@@ -10,7 +10,7 @@ class Helpers {
   generateRandomString(length: number, includeNumbers: boolean = false) {
     if (!length) {
       length = Math.round(10 * Math.random() + 2)
-    } else length = 7;
+    };
     let result = '';
     let characters: string;
     characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -26,7 +26,7 @@ class Helpers {
     return {
       firstName: this.generateRandomString(0),
       lastName: this.generateRandomString(0),
-      startDate: `${this.generateRandomInt(2010, 2019)}-${this.generateRandomInt(1, 12)}-${this.generateRandomInt(1, 28)}`,
+      startDate: `${this.generateRandomInt(2010, 2018)}-${this.generateRandomTwoDigitsString(1, 12)}-${this.generateRandomTwoDigitsString(1, 28)}`,
       email: this.generateRandomEmail()
     }
   }
@@ -35,6 +35,11 @@ class Helpers {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  generateRandomTwoDigitsString(min, max) {
+    const number = String(this.generateRandomInt(min, max));
+    return (number.length === 1 ? `0${number}` : number);
   }
 
   generateRandomEmail() {
