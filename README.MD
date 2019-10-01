@@ -8,17 +8,22 @@ Refer to [this page](https://nodejs.org/en/) for installation details.
 
 # How to run tests
 `npm i`
+
 `testcafe`
 
 ## Troubleshooting
 If previous commands does not run tests try next:
 `npm i`
+
 `npm i -g testcafe`
+
 `testcafe`
 
 If your OS is Linux and you get permission error run:
 `sudo npm i` or `sudo npm i --unsafe-perm`
+
 `sudo npm i -g testcafe` or `sudo npm i -g testcafe --unsafe-perm`
+
 `testcafe`
 
 *Alternative way to run tests:*
