@@ -1,5 +1,5 @@
 ## Checklist
-[Link for view](https://docs.google.com/spreadsheets/d/1iA8NtPqnfZfIlEBXi9ePbwnU1Lb1C8NXnt9sPy4eZTs/edit?usp=sharing).
+[Link for view](https://docs.google.com/spreadsheets/d/1iA8NtPqnfZfIlEBXi9ePbwnU1Lb1C8NXnt9sPy4eZTs/edit?usp=sharing) checklist.
 ### Why checklist? And not test cases?
 - сhecklists are faster to create
 - require much less time for maintaining (which is bit advantage)

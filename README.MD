@@ -1,23 +1,28 @@
-## Checklist
-[Link for view](https://docs.google.com/spreadsheets/d/1iA8NtPqnfZfIlEBXi9ePbwnU1Lb1C8NXnt9sPy4eZTs/edit?usp=sharing).
-### Why checklist? And not test cases?
-- сhecklists are faster to create
-- require much less time for maintaining (which is bit advantage)
-- generally, they provide almost the same level of clearness (as test cases)
-- push QA to use mind and creativity
-- do not contain extra or obvious data (e.g. steps if they are clear from the summary)
+# Requirements
+node version 10+
+npm version 6+
+Refer to [this page]([https://nodejs.org/en/](https://nodejs.org/en/)) for installation details.
 
-### Why testcafe?
-- created for UI testing
-- contains embedded waits
-- easy to start
-- supports all popular browsers (even IE)
-- supports mobile emulation 
-- can work with native alerts, prompts, etc
-- does not need webdriver or any additional tools (like Appium)
-- supports page object pattern
-- can lunch tests concurrently
-- free to use
+# How to run tests
+`npm i`
+`testcafe`
 
-### Why I have automated that specific cases?
-The first but not the only parameter is the priority of the test. On the other hand, I tried to use and show different functionalities which *testcafe* provides.
+## Troubleshooting
+If previous commands does not run tests try next:
+`npm i`
+`npm i -g testcafe`
+`testcafe`
+
+If your OS is Linux and you get permission error run:
+`sudo npm i` or `sudo npm i --unsafe-perm`
+`sudo npm i -g testcafe` or `sudo npm i -g testcafe --unsafe-perm`
+`testcafe`
+
+*Alternative way to run tests:*
+`npm run test`
+
+### Notes
+When you run tests or view its code you will definitely notice that *testcafe* opens page from scratch for each test - so its expected behavior and allows us to execute tests without influence between tests.
+
+
+If you have any questions please contact me via oleksandr.pelykh@gmail.com.
