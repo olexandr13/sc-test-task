@@ -1,0 +1,26 @@
+{
+  "browsers": [
+    "chrome"
+    // "firefox:headless"
+  ],
+  "src": [
+    "src/tests/all-in-one-test.ts"
+  ],
+  "reporter": [
+    {
+      "name": "spec"
+    }
+  ],
+  "screenshotPath": "./reports/screenshots/",
+  "takeScreenshotsOnFails": true,
+  "debugMode": false,
+  "debugOnFail": false,
+  "stopOnFirstFail": false,
+  // "appCommand": "node server.js",
+  "selectorTimeout": 6000,
+  "speed": 1,
+  // "disablePageCaching": true,
+  "developmentMode": false,
+  "qrCode": false,
+  "colors": true
+}
