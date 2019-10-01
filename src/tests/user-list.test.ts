@@ -9,12 +9,12 @@ const BASE_URL = `http://cafetownsend-angular-rails.herokuapp.com/login`;
 let user: any;
 
 fixture`User list`
-  .page`${BASE_URL}`;
-
-test
-  .before(async () => {
+  .page`${BASE_URL}`
+  .beforeEach(async () => {
     await mainPage.login();
   })
+
+test
   ('Add user', async () => {
     await userList
       .clickCreateBtn();
@@ -30,9 +30,6 @@ test
   });
 
 test
-  .before(async () => {
-    await mainPage.login();
-  })
   ('Edit user', async () => {
     const oldUser = user;
     const newUser = helpers.generateUserData();
@@ -53,9 +50,6 @@ test
   });
 
 test
-  .before(async () => {
-    await mainPage.login();
-  })
   ('Delete user', async () => {
     await userList
       .clickOnUserWithFullName(user.firstName, user.lastName)
@@ -64,9 +58,6 @@ test
   });
 
 test
-  .before(async () => {
-    await mainPage.login();
-  })
   ('Cancel user creation', async () => {
     await userList
       .clickCreateBtn();
@@ -77,9 +68,6 @@ test
   });
 
 test
-  .before(async () => {
-    await mainPage.login();
-  })
   ('Open user info by double click', async () => {
     await t
       .doubleClick(userList.user);
