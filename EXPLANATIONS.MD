@@ -34,3 +34,7 @@ The first but not the only parameter is the tests priority. From the other hand 
 - automated some minor functionality to show *testcafe* features (like native browser confirm handling)
 - used page objects
 - spent only 10 hours for test task :)
+
+
+### Report
+*Testcafe* supports different types or reporting but I used one of the simplest. You can see it after test execution or by opening */reports* folder.
