@@ -1,6 +1,6 @@
 {
   "browsers": [
-    "chrome"
+    "chrome:headless"
     // "firefox:headless"
   ],
   "src": [
